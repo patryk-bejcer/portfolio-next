@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import NavLink from '@/app/components/NavLink';
+import NavLink from '@/app/components/Navigation/NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
-import MenuOverlay from '@/app/components/MenuOverlay';
+import MenuOverlay from '@/app/components/Navigation/MenuOverlay';
 import { NavLinks } from '@/types/navigation';
 
 const navLinks: NavLinks = [
@@ -14,10 +14,6 @@ const navLinks: NavLinks = [
   {
     title: 'Projects',
     path: '#projects',
-  },
-  {
-    title: 'Contact',
-    path: '#contact',
   },
 ];
 
@@ -31,7 +27,7 @@ const Navbar = () => {
           href={'/'}
           className='text-lg font-semibold text-white md:text-4xl'
         >
-          patrykbejcer.com.pl
+          [ PB ]
         </Link>
 
         <div className='mobile-menu block md:hidden'>
