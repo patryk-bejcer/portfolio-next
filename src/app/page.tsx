@@ -3,6 +3,7 @@ import Navbar from '@/app/components/Navigation/Navbar';
 import About from '@/app/components/Sections/About';
 import Projects from '@/app/components/Sections/Projects';
 import Footer from '@/app/components/Footer';
+import Email from '@/app/components/Sections/Email';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <Email />
       </div>
       <Footer />
     </main>

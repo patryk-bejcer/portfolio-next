@@ -12,7 +12,7 @@ const projectsData = [
     image: '/images/projects/1.png',
     tag: ['All', 'Web'],
     gitUrl: '/',
-    previewUrl: '/',
+    previewUrl: 'https://decor-cake.pl/',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projectsData = [
     image: '/images/projects/2.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/patryk-bejcer/goparty',
-    previewUrl: 'https://decor-cake.pl/',
+    previewUrl: '',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const projectsData = [
     image: '/images/projects/3.png',
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/patryk-bejcer/cupra-layout-nuxt',
-    previewUrl: 'https://cukierniakulpa.pl/',
+    previewUrl: 'https://cupra-layout-nuxt.vercel.app/',
   },
 
   {
@@ -40,17 +40,26 @@ const projectsData = [
     image: '/images/projects/4.png',
     tag: ['All', 'Web'],
     gitUrl: '/',
-    previewUrl: '/',
+    previewUrl: 'https://cukierniakulpa.pl/',
   },
   {
     id: 5,
     title: 'Diodes loop (C++ + Arduino)',
     description: '',
     image: '/images/projects/5.png',
-    tag: ['All', 'Web'],
+    tag: ['All', 'Arduino'],
     gitUrl:
       'https://github.com/patryk-bejcer/binary-octal-ignition-of-diodes-arduino',
     previewUrl: '/',
+  },
+  {
+    id: 6,
+    title: 'MS-Tools',
+    description: '',
+    image: '/images/projects/6.png',
+    tag: ['All', 'Web'],
+    gitUrl: '',
+    previewUrl: 'https://ms-tools.pl/',
   },
 ];
 
@@ -90,8 +99,8 @@ const Projects = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name='Mobile'
-          isSelected={tag === 'Mobile'}
+          name='Arduino'
+          isSelected={tag === 'Arduino'}
         />
       </div>
       <ul ref={ref} className='grid gap-8 md:grid-cols-3 md:gap-12'>
