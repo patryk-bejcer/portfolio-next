@@ -1,19 +1,11 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL!;
+const fromEmail = process.env.FROM_EMAIL;
 
-interface EmailData {
-  email: string;
-  subject: string;
-  message: string;
-}
-
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
-  // @ts-ignore
-  const { email, subject, message } = (await req.json()) as EmailData;
-
+export async function POST(req, res) {
+  const { email, subject, message } = await req.json();
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
@@ -29,8 +21,8 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
         </>
       ),
     });
-    res.status(200).json(data);
+    return NextResponse.json(data);
   } catch (error) {
-    res.status(500).json({ error: 'Error sending email' });
+    return NextResponse.json({ error });
   }
 }
