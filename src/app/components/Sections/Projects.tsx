@@ -20,8 +20,8 @@ const projectsData = [
     description: 'Search portal for events',
     image: '/images/projects/2.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '',
+    gitUrl: 'https://github.com/patryk-bejcer/goparty',
+    previewUrl: '/',
   },
   {
     id: 3,
