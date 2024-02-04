@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import Link from 'next/link';
 
 const Hero = () => {
   const openInNewTab = (url: string) => {
@@ -45,9 +46,12 @@ const Hero = () => {
             collaborate!
           </p>
           <div>
-            <button className='mr-4 w-full rounded-full bg-white bg-gradient-to-br  from-pink-500 via-red-500 to-yellow-500 px-6 py-3 text-white hover:bg-slate-200 sm:w-fit'>
+            <Link
+              href='/#contact'
+              className='mr-4 w-full rounded-full bg-white bg-gradient-to-br  from-pink-500 via-red-500 to-yellow-500 px-6 py-3 text-white hover:bg-slate-200 sm:w-fit'
+            >
               Hire me
-            </button>
+            </Link>
             <button
               role='link'
               onClick={() => openInNewTab('https://patrykbejcer.com.pl/CV.pdf')}
