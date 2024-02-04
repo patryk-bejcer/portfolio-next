@@ -20,7 +20,7 @@ const projectsData = [
     description: 'Search portal for events',
     image: '/images/projects/2.png',
     tag: ['All', 'Web'],
-    gitUrl: 'https://github.com/patryk-bejcer/goparty',
+    gitUrl: '/',
     previewUrl: '',
   },
   {
@@ -58,7 +58,7 @@ const projectsData = [
     description: '',
     image: '/images/projects/6.png',
     tag: ['All', 'Web'],
-    gitUrl: '',
+    gitUrl: '/',
     previewUrl: 'https://ms-tools.pl/',
   },
 ];
