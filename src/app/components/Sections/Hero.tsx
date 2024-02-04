@@ -48,13 +48,13 @@ const Hero = () => {
           <div>
             <Link
               href='/#contact'
-              className='mr-4 w-full rounded-full bg-white bg-gradient-to-br from-pink-500 via-red-500  to-yellow-500 px-6 py-3 pb-4 text-white hover:bg-slate-200 sm:w-fit md:pb-0'
+              className='mb-4 mr-4 w-full rounded-full bg-white bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 px-6 py-3 text-white hover:bg-slate-200 sm:w-fit md:mb-0'
             >
               Hire me
             </Link>
             <button
               role='link'
-              onClick={() => openInNewTab('https://patrykbejcer.com.pl/CV.pdf')}
+              onClick={() => openInNewTab('/CV.pdf')}
               className='mt-3 w-full rounded-full bg-transparent bg-gradient-to-br  from-pink-500 via-red-500 to-yellow-500  px-1 py-1 text-white hover:bg-slate-800 sm:w-fit'
             >
               <span className='block rounded-full bg-[#121212] px-5 py-2 hover:bg-slate-800'>
