@@ -48,7 +48,7 @@ const Hero = () => {
           <div>
             <Link
               href='/#contact'
-              className='mr-4 w-full rounded-full bg-white bg-gradient-to-br  from-pink-500 via-red-500 to-yellow-500 px-6 py-3 text-white hover:bg-slate-200 sm:w-fit'
+              className='mr-4 w-full rounded-full bg-white bg-gradient-to-br from-pink-500 via-red-500  to-yellow-500 px-6 py-3 pb-4 text-white hover:bg-slate-200 sm:w-fit md:pb-0'
             >
               Hire me
             </Link>
